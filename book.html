@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | SRC Sports Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SRC Sports Academy</div>
+        <div id="hamburger-icon" aria-label="Open Menu">&#9776;</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html">New Activities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="book.html">Book Online</a></li>
+        </ul>
+    </nav>
+
+    <main class="form-container">
+        <section class="sport-card">
+            <h2>Book Your Training Session</h2>
+            <p>Initial bookings are processed via email for confirmation.</p>
+            
+            <form id="booking-form">
+                <div class="input-group">
+                    <label for="preferred-date">Preferred Date:</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="trainer">Select Coach/Trainer:</label>
+                    <input type="text" id="trainer" name="trainer" placeholder="e.g. Head Coach" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Additional Notes:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="cta-btn">Submit Booking Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SRC Sports Academy | Visitors: <span id="visitor-count">0</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
